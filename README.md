@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/530682e1-044f-4ce1-a2ff-2785afe23022.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-  To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 MAchine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
+  To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
 
 </p>
 <p>
