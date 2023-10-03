@@ -78,3 +78,20 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <br />
 10. Next download Microsoft Visual C + + (VC_redist.x86.exe.)
+</p>
+<br />
+11.  Next Install a database ((mysql-5.5.62-win32.msi)
+Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install.
+Create your credentials for the database, your username will automatically be “root”. So create your password.  Do not forget it! Then execute.
+</p>
+<br />
+12. Next search IIS on the windows start menu, right click and open as admin.
+</p>
+<br />
+13. Open the PHP manager that was installed earlier. Click register and it will ask for a location, click the three dots. Locate file C:\PHP\CGI and select it.
+</p>
+<br />
+14. Refresh IIS AFTER selecting the file.
+ Then download OSTicket (osTicket v 1.12.8) onto the machine. 
+Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
+
