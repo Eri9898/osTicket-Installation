@@ -46,17 +46,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 2. Connect to the VM via Remote Desktop and within the VM enable IIS. Go to the control panel, then click Programs, control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box. Make sure the last 2 boxes are checked.
-
 </p>
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
 3. Next you must enable CGI and common HTTP Features. On the same windows feaures list scroll to world wide services>App Development> CGI and check the box. Scroll further down the list, check  and expand HTTP Features.  Make sure all the boxes within HHTP features are turned on. 
 *IIS needs CGI and HTTP features for dynamic content such as a ticketing system.
-
 </p>
 <br />
 4. Make sure IIS Managment Console is checked. Access it by scrolling back up to IIS on the same windows features window,  clicking on IIS>Web Management Tools>IIS Mangment Console
