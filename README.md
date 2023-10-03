@@ -94,4 +94,45 @@ Create your credentials for the database, your username will automatically be �
 14. Refresh IIS AFTER selecting the file.
  Then download OSTicket (osTicket v 1.12.8) onto the machine. 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
-
+</p>
+<br />
+15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket"
+</p>
+<br />
+16. Reload IIS again and in the upper left corner go click on Ticket\YourName> Sites> Default> osTicket. On the right side of the screen click “Browse *:80” and the welcome webpage to IIS should load. It says “Thanks for choosing osTicket!”
+</p>
+<br />
+17. On that same page, Ticket\YourName> Sites> Default> osTicket.  Double-click PHP Manager within OSticket. Click “Enable or disable an extension”
+Enable: php_imap.dll
+Enable: php_intl.dll
+Enable: php_opcache.dll
+Then Refresh osTicket Browser
+</p>
+<br />
+18. Rename ost-sampleconfig.php to ost-config.php
+It is located in
+C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+</p>
+<br />
+19. Next you will assign permissions to ost-config.php.  Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
+</p>
+<br />
+20. Instal HeidiSQL ((((NAME)))  so that you can connect to MySQL. Open the file and install it. The app shoud open after install. On the bottom left click new, then enter username:Root then password:
+Create a new session, enter username and passowrd.
+</p>
+<br />
+21. Create a new session and connect to it by clicking open.  
+</p>
+<br />
+22. In Heidi right click unnamed in upper left corner, then click create new then database.then name it osTIcket then say ok
+</p>
+<br />
+23. 25 Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings and in database settings enter your MY SQL 
+MySQL Table Prefix: ost-config.php
+MySQL Database: osTicket
+MySQL Username: root
+MySQL Password: ***** whatever you created
+Click “Install Now!”
+</p>
+<br />
+24. OS TIcket should then load up with a welcome screen. Congratulations you just installed os Ticket! c: 
