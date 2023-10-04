@@ -102,6 +102,9 @@ Open the OSTicket file, extract and copy the zipped file "Upload" within it. Cop
 15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket"
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/fMTpCKA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 16. Reload IIS again and in the upper left corner go click on Ticket\YourName> Sites> Default> osTicket. On the right side of the screen click “Browse *:80” and the welcome webpage to IIS should load. It says “Thanks for choosing osTicket!”
 </p>
 <br />
@@ -117,6 +120,9 @@ It is located in
 C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/t2GHOsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 19. Next you will assign permissions to ost-config.php.  Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
@@ -127,10 +133,13 @@ Create a new session, enter username and passowrd.
 21. Create a new session and connect to it by clicking open.  
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/Tcf1nhi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 22. In Heidi right click unnamed in upper left corner, then click create new then database.then name it osTIcket then say ok
 </p>
 <br />
-23. 25 Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings and in database settings enter your MY SQL 
+23. Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings and in database settings enter your MY SQL 
 MySQL Table Prefix: ost-config.php
 MySQL Database: osTicket
 MySQL Username: root
