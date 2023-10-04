@@ -85,9 +85,15 @@ Create your credentials for the database, your username will automatically be â€
 12. Next search IIS on the windows start menu, right click and open as admin.
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/s5jUSDP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 13. Open the PHP manager that was installed earlier. Click register and it will ask for a location, click the three dots. Locate file C:\PHP\CGI and select it.
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
  Then download OSTicket (osTicket v 1.12.8) onto the machine. 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
