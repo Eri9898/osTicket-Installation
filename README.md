@@ -61,13 +61,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 5. Hit Ok and the computer should install IIS. On the web browser look up the local host 127.0.0.1 and the webpage should load. (it may not load on microsoft edge, if that is the case then download google chrome or another browser. Then search up the local host on there.)
 </p>
 <br />
-6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
+6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it. https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10
 </p>
 <br />
-7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi).
+7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi). 
+https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi 
 </p>
 <br />
-8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip)
+8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) 
+
 </p>
 <br />
 </p>
@@ -76,7 +78,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 9. Create a new file named "PHP" for PHP on the local harddrive., unzip the PHP contents into C:/PHP
 </p>
 <br />
-10. Next download Microsoft Visual C + + (VC_redist.x86.exe.)
+10. Next download Microsoft Visual C + + (VC_redist.x86.exe.) 
+https://www.microsoft.com/en-us/download/details.aspx?id=52685
 </p>
 <br />
 11.  Next Install a database ((mysql-5.5.62-win32.msi)
