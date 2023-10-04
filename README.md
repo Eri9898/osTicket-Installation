@@ -139,6 +139,9 @@ Create a new session, enter username and passowrd.
 22. In Heidi right click unnamed in upper left corner, then click create new then database.then name it osTIcket then say ok
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/GPlKJnb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 23. Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings and in database settings enter your MY SQL 
 MySQL Table Prefix: ost-config.php
 MySQL Database: osTicket
