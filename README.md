@@ -68,6 +68,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip)
 </p>
 <br />
+</p>
+<br />
+<img src="https://imgur.com/yA0dnbM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 9. Create a new file named "PHP" for PHP on the local harddrive., unzip the PHP contents into C:/PHP
 </p>
 <br />
