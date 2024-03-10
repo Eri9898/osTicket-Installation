@@ -50,14 +50,14 @@ This tutorial outlines the installation of the open-source help desk ticketing s
 5. Hit Ok and the computer should install IIS. On the web browser look up the local host 127.0.0.1 and the webpage should load. (it may not load on microsoft edge, if that is the case then download google chrome or another browser. Then search up the local host on there.)
 </p>
 <br />
-6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it. https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10
+6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it. https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
 </p>
 <br />
 7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi). 
-https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi 
+https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link
 </p>
 <br />
-8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) 
+8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
 
 </p>
 <br />
@@ -68,10 +68,10 @@ https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D45
 </p>
 <br />
 10. Next download Microsoft Visual C + + (VC_redist.x86.exe.) 
-https://www.microsoft.com/en-us/download/details.aspx?id=52685
+https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link
 </p>
 <br />
-11.  Next Install a database ((mysql-5.5.62-win32.msi)
+11.  Next Install a database ((mysql-5.5.62-win32.msi) https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link
 Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install.
 Create your credentials for the database, your username will automatically be “root”. So create your password.  Do not forget it! Then execute.
 </p>
@@ -120,7 +120,8 @@ C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 19. Next you will assign permissions to ost-config.php.  Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
-20. Instal HeidiSQL ((((NAME)))  so that you can connect to MySQL. Open the file and install it. The app shoud open after install. On the bottom left click new, then enter username:Root then password:
+20. Instal HeidiSQL so that you can connect to MySQL. https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
+Open the file and install it. The app shoud open after install. On the bottom left click new, then enter username:Root then password:
 Create a new session, enter username and passowrd.
 </p>
 <br />
