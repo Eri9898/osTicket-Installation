@@ -89,7 +89,7 @@ Create your credentials for the database, your username will automatically be â€
 <br />
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
- Then download OSTicket (osTicket v 1.12.8) https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link onto the machine. 
+ Then download OSTicket (osTicket v 1.15.8) https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link onto the machine. 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
 </p>
 <br />
