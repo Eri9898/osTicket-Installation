@@ -23,6 +23,7 @@ This tutorial outlines the installation of the open-source help desk ticketing s
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/ab671f05-1dfe-4c06-a4a0-c781f6bcabee.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
+*   Since this machine will be hosting a server web application extra secuirty precautiomns will be in place
 
 </p>
 <p>
@@ -34,23 +35,29 @@ This tutorial outlines the installation of the open-source help desk ticketing s
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/261ff49c-4e4f-494c-8d2b-b1eefb5ea4b4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-2. Connect to the VM via Remote Desktop and within the VM enable IIS. Go to the control panel, then click Programs, control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box. Make sure the last 2 boxes are checked.
+2. Connect to the VM via Remote Desktop and within the VM enable IIS. 
+ ***This step turns the VM into a web server essentially. Ports 443 and 80 must also allow inbound traffic otherwise the web service wiill be invisible to the world. 
+Go to the control panel, then click Programs, control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box. Make sure the last 2 boxes are checked.
 </p>
 <br />
 3. Next you must enable CGI and common HTTP Features. On the same windows feaures list scroll to world wide services>App Development> CGI and check the box. Scroll further down the list, check  and expand HTTP Features.  Make sure all the boxes within HTTP features are turned on. 
-*IIS needs CGI and HTTP features for dynamic content such as a ticketing system.
+***IIS needs CGI and HTTP features in order to host dynamic and static content  
 </p>
 <br />
 4. Make sure IIS Managment Console is checked. Access it by scrolling back up to IIS on the same windows features window,  clicking on IIS>Web Management Tools>IIS Mangment Console
+***this is the Graphic User Interface for osTicket, which allows for efficient management of web applications without relying soley on code-based tools like powershell or python. IIS manager also includes built-in diagnostic features that are valauble for real world trouble shooting.
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/GwE2WGF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 5. Hit Ok and the computer should install IIS. On the web browser look up the local host 127.0.0.1 and the webpage should load. (it may not load on microsoft edge, if that is the case then download google chrome or another browser. Then search up the local host on there.)
-</p>
+*** If the IIS page displays then it means the VM has succesfully connected to it's own web server and can serve web content. This also confirms Port 80 is open allowing the server to recieve and respond to HTTP requsts. 
+If HTTPS is configured with a valid certficate you can also confirm port 443 is open and cn handle encrypted traffic.
 <br />
-6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it. https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
+6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
+
+https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
 </p>
 <br />
 7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi). 
