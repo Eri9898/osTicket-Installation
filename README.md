@@ -143,11 +143,12 @@ Without this rename, osTicket will not finish installing.
 <br />
 <img src="https://imgur.com/t2GHOsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 19. Next you will assign permissions to ost-config.php. 
-osTicket needs permission to write to ost-config.php during setup so that it can access the necessary tools to contnue. 
+osTicket needs permission to write to ost-config.php during setup so that it can access the necessary tools to contnue. so you will change the permissions to allow osTicket to utilize the config file.
 Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
 20. Instal HeidiSQL so that you can connect to MySQL. https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
+xxx HeidiSQL is a GUI for MySQL You’ll need it to create, view, and manage the osTicket database in a user friendly way.
 Open the file and install it. The app shoud open after install. On the bottom left click new, then enter username:Root then password:
 Create a new session, enter username and passowrd.
 </p>
@@ -159,6 +160,7 @@ Create a new session, enter username and passowrd.
 <br />
 <img src="https://imgur.com/Tcf1nhi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 22. In Heidi right click unnamed in upper left corner, then click create new then database.then name it osTIcket then say ok
+xxx  This is where all osTicket data will be stored like user data, support tickets, system settings, etc. 
 </p>
 <br />
 </p>
@@ -170,6 +172,7 @@ MySQL Database: osTicket
 MySQL Username: root
 MySQL Password: ***** whatever you created
 Click “Install Now!”
+xxxYou're about to finish installing osTicket by connecting it to the database you just made in HeidiSQL. This step links everything together — the files in IIS, the PHP interpreter, and the MySQL database
 </p>
 <br />
 24. OS TIcket should then load up with a welcome screen. Congratulations you just installed os Ticket! c: 
