@@ -56,22 +56,24 @@ Go to the control panel, then click Programs, control Panel>programs>Programs & 
 If HTTPS is configured with a valid certficate you can also confirm port 443 is open and cn handle encrypted traffic.
 <br />
 6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
-
 https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
+*** PHP manager for IIS provides a GUI to configure PHP based web apps like osTicket. PHP support can be enabled on IIS without needing to be manually edit comnfig files or use command line tools.
 </p>
 <br />
 7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi). 
 https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link
+*** rewrite modules help organize and secure web traffic and more. 
 </p>
 <br />
 8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
-
+*** osTicket is a PHP based app, so installing PHP helps IIS to properly process the code within osTicket's files. Without this IIS can't understand or run osTicket basically.
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/yA0dnbM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 9. Create a new file named "PHP" for PHP on the local harddrive., unzip the PHP contents into C:/PHP
+*** Unzipping the PHP file into a folder on the local drive (C:\PHP) gives IIS a static, reliable location to find the PHP executables and configuration files. This setup keeps everything organized and is important for properly linking PHP to FastCGI, which is how IIS processes PHP scripts efficiently. FastCGI basically translate's osTicket's PHP codes so that IIS understands them and can execute.
 </p>
 <br />
 10. Next download Microsoft Visual C + + (VC_redist.x86.exe.) 
