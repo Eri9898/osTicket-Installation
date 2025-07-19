@@ -78,11 +78,15 @@ https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share
 <br />
 10. Next download Microsoft Visual C + + (VC_redist.x86.exe.) 
 https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link
+xxxInstalling the Microsoft Visual C++ Redistributable gives PHP the runtime libraries it needs to work correctly.
+These libraries include pre-written code for things like file handling and memory use.
+Since PHP was built using C++, it expects these resources to be there. Without them, PHP (and apps like osTicket that rely on it) can crash or fail to run properly.
 </p>
 <br />
 11.  Next Install a database ((mysql-5.5.62-win32.msi) https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link
 Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install.
 Create your credentials for the database, your username will automatically be “root”. So create your password.  Do not forget it! Then execute.
+xxxInstalling my sql gives os ticket a database to store, retrieve and manage all its info like tickets, users, pretty much everything in osticket. 
 </p>
 <br />
 12. Next search IIS on the windows start menu, right click and open as admin.
