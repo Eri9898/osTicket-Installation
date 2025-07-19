@@ -96,41 +96,55 @@ xxxInstalling my sql gives os ticket a database to store, retrieve and manage al
 <br />
 <img src="https://imgur.com/s5jUSDP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 13. Open the PHP manager that was installed earlier. Click register and it will ask for a location, click the three dots. Locate file C:\PHP\CGI and select it.
+xxx regestering PHP like this connects IIS to the PHP engine, and it'll know where to process those PHP files.
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
- Then download OSTicket (osTicket v 1.15.8) https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link onto the machine. 
+ Download OSTicket (osTicket v 1.15.8) https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link onto the machine. 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
+xxx the "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot ANy files sent here will be served when the server is accessed throggh a browser.
 </p>
 <br />
-15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket"
+15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket" for organizational purposes.
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/fMTpCKA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-16. Reload IIS again and in the upper left corner go click on Ticket\YourName> Sites> Default> osTicket. On the right side of the screen click “Browse *:80” and the welcome webpage to IIS should load. It says “Thanks for choosing osTicket!”
+16.Launch osTicket in IIS and Confirm It's Running  First, reload IIS to make sure it recognizes all the new configurations and files.
+Then navigate in the left panel:
+TicketYourName > Sites > Default Web Site > osTicket
+On the right panel, click *“Browse :80” — this tells IIS to open the site over port 80 (HTTP).
+If everything’s set up right, your browser will launch and you’ll see the osTicket welcome screen that says:
+“Thanks for choosing osTicket!”
+This confirms IIS is successfully hosting your osTicket app and that port 80 is properly handling HTTP traffic. You’re basically telling your VM to host this site.
 </p>
 <br />
-17. On that same page, Ticket\YourName> Sites> Default> osTicket.  Double-click PHP Manager within OSticket. Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
+17. On that same page, Ticket\YourName> Sites> Default> osTicket.  Double-click PHP Manager within OSticket. Click “Enable or disable an extension” Enable:
+php_imap.dll – allows email fetching for tickets
+php_intl.dll – supports international characters & formatting
+php_opcache.dll – improves PHP performance by caching scripts
 Then Refresh osTicket Browser
+Enabling these is CRUCIAL because osTicket needs them to function smoothly, especially if you're handling email-based tickets 
 </p>
 <br />
 18. Rename ost-sampleconfig.php to ost-config.php
 It is located in
 C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+This file is the default configuration template that osTicket needs to finalize setup. Renaming it tells the system,
+the tempalate is an actual config file now.
+Without this rename, osTicket will not finish installing. 
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/t2GHOsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-19. Next you will assign permissions to ost-config.php.  Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
+19. Next you will assign permissions to ost-config.php. 
+osTicket needs permission to write to ost-config.php during setup so that it can access the necessary tools to contnue. 
+Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
 20. Instal HeidiSQL so that you can connect to MySQL. https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
