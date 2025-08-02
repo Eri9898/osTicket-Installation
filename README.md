@@ -22,7 +22,7 @@ This tutorial outlines the installation of the open-source help desk ticketing s
 <p>
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/ab671f05-1dfe-4c06-a4a0-c781f6bcabee.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet. Ports 443 and 80 must also allow inbound traffic otherwise the web service wiil be invisible to the world. (Since this machine will be hosting a server web application extra secuirty precautiomns will be in place.)
+1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet. (Since this machine will be hosting a server web application extra secuirty precautiomns will be in place.)
 
 </p>
 <p>
@@ -53,7 +53,7 @@ This also confirms Port 80 is open allowing the server to recieve and respond to
 If HTTPS is configured with a valid certficate you can also confirm port 443 is open and can handle encrypted traffic.
 </p>
 <br />
-6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
+6. Next you must install a PHP Manager on the VM for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
 https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
 PHP manager for IIS provides a GUI to configure PHP based web apps. 
 </p>
