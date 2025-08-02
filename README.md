@@ -47,23 +47,25 @@ This is the Graphic User Interface for osTicket, which allows for efficient mana
 </p>
 <br />
 <img src="https://imgur.com/GwE2WGF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-5. Hit Ok and the computer should install IIS. On the web browser look up the local host 127.0.0.1 and the webpage should load. (it may not load on microsoft edge, if that is the case then download google chrome or another browser. Then search up the local host on there.)
-If the IIS page displays then it means the VM has succesfully connected to it's own web server and can serve web content. This also confirms Port 80 is open allowing the server to recieve and respond to HTTP requsts. 
+5. Hit Ok and the computer should install IIS. On the web browser look up the local host 127.0.0.1 and the webpage should load. 
+If the IIS page displays then it means the VM has succesfully connected to it's own web server and can serve web content. 
+This also confirms Port 80 is open allowing the server to recieve and respond to HTTP requsts. 
 If HTTPS is configured with a valid certficate you can also confirm port 443 is open and can handle encrypted traffic.
+</p>
 <br />
 6. Next you must install a PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Download the file then Open the file to install it.
 https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link
-*** PHP manager for IIS provides a GUI to configure PHP based web apps like osTicket. PHP support can be enabled on IIS without needing to be manually edit comnfig files or use command line tools.
+PHP manager for IIS provides a GUI to configure PHP based web apps. 
 </p>
 <br />
 7. Follow the same procedure for downloading a rewrite module (rewrite_amd64_en-US.msi). 
 https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link
-*** rewrite modules help organize and secure web traffic and more. 
+Rewrite modules help organize and secure web traffic and more. 
 </p>
 <br />
 
 8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
-*** osTicket is a PHP based app, so installing PHP helps IIS to properly process the code within osTicket's files. Without this IIS can't understand or run osTicket basically.
+osTicket is a PHP based app, so installing PHP helps IIS to properly process the code within osTicket's files. Without this IIS can't understand or run osTicket basically.
 </p>
 <br />
 </p>
