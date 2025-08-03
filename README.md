@@ -167,13 +167,17 @@ This is where all osTicket data will be stored like user data, support tickets, 
 </p>
 <br />
 <img src="https://imgur.com/GPlKJnb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-23. Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings and in database settings enter your MY SQL 
-MySQL Table Prefix: ost-config.php
+22. Continue Setting up osTicket in the ISS webpage, click next. Next fill out the system settings.
+Helpdesk Name: osTicket
+Default Email: osticket@osticket.com
+Now create an Admin login for osTicket.Eri
+In database settings enter 
+MY SQL Prefix: ost-config.php
 MySQL Database: osTicket
 MySQL Username: root
-MySQL Password: ***** whatever you created
+MySQL Password: ***** 
 Click “Install Now!”
-xxxYou're about to finish installing osTicket by connecting it to the database you just made in HeidiSQL. This step links everything together — the files in IIS, the PHP interpreter, and the MySQL database
+You're about to finish installing osTicket by connecting it to the database you just made in HeidiSQL. This step links everything together — the files in IIS, the PHP, and MySQL database
 </p>
 <br />
 24. OS TIcket should then load up with a welcome screen. Congratulations you just installed os Ticket! c: 
