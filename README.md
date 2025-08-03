@@ -105,6 +105,7 @@ Regestering PHP like this connects IIS to the PHP engine, and it'll know where t
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
  Download OSTicket (osTicket v 1.15.8) [https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link ]onto the machine. 
+**right click fi;e> extract and send to 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
 The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot ANy files sent here will be served when the server is accessed throgh a browser.
 </p>
