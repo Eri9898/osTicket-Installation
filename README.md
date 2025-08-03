@@ -173,7 +173,7 @@ Helpdesk Name: osTicket
 Default Email: osticket@osticket.com
 Now create an Admin login for osTicket.Eri
 In database settings enter 
-MY SQL Prefix: ost-config.php
+MY SQL Prefix: ost_ 
 MySQL Database: osTicket
 MySQL Username: root
 MySQL Password: ***** 
