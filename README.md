@@ -154,17 +154,14 @@ HeidiSQL is a GUI for MySQL You’ll need it to create, view, and manage the osT
 Open the file and install it. The app shoud open after install. 
 </p>
 <br />
-21. On the left enter username:Root then password: and click open
-Create a new session, enter username and passowrd. 
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/Tcf1nhi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-21. In Heidi  click new, then right click unnamed in upper left corner, then name it osTIcket.  On the left enter username:Root then password: and click open
+21. In Heidi right click> new> session. Then right click the unnamed session, and rename it osTIcket. On the right side enter username:Root then password: and click open
 
-new then database. then say ok
-xxx  This is where all osTicket data will be stored like user data, support tickets, system settings, etc. 
+This is where all osTicket data will be stored like user data, support tickets, system settings, etc. 
 </p>
 <br />
 </p>
