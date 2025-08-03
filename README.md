@@ -64,7 +64,8 @@ Rewrite modules help organize and secure web traffic and more.
 </p>
 <br />
 
-8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip) https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
+8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip)
+https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
 osTicket is a PHP based app, so installing PHP helps IIS to properly process the code within osTicket's files. Without this IIS can't understand or run osTicket basically.
 </p>
 <br />
@@ -72,20 +73,21 @@ osTicket is a PHP based app, so installing PHP helps IIS to properly process the
 <br />
 <img src="https://imgur.com/yA0dnbM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 9. Create a new file named "PHP" for PHP on the local harddrive., unzip the PHP contents into C:/PHP
-*** Unzipping the PHP file into a folder on the local drive (C:\PHP) gives IIS a static, reliable location to find the PHP executables and configuration files. This setup keeps everything organized and is important for properly linking PHP to FastCGI, which is how IIS processes PHP scripts efficiently. FastCGI basically translate's osTicket's PHP codes so that IIS understands them and can execute.
+Unzipping the PHP file into a folder on the local drive (C:\PHP) gives IIS a static, reliable location to find the PHP executables and configuration files. This setup keeps everything organized and is important for properly linking PHP to FastCGI, which is how IIS processes PHP scripts efficiently. FastCGI basically translate's osTicket's PHP codes so that IIS understands them and can execute.
 </p>
 <br />
 10. Next download Microsoft Visual C + + (VC_redist.x86.exe.) 
 https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link
-xxxInstalling the Microsoft Visual C++ Redistributable gives PHP the runtime libraries it needs to work correctly.
+Installing the Microsoft Visual C++ Redistributable gives PHP the runtime libraries it needs to work correctly.
 These libraries include pre-written code for things like file handling and memory use.
 Since PHP was built using C++, it expects these resources to be there. Without them, PHP (and apps like osTicket that rely on it) can crash or fail to run properly.
 </p>
 <br />
-11.  Next Install a database ((mysql-5.5.62-win32.msi) https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link
-Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install.
+11.  Next Install a database ((mysql-5.5.62-win32.msi) 
+https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link
+Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install as a windows service.
 Create your credentials for the database, your username will automatically be “root”. So create your password.  Do not forget it! Then execute.
-xxxInstalling my sql gives os ticket a database to store, retrieve and manage all its info like tickets, users, pretty much everything in osticket. 
+Installing mySQL gives os ticket a database to store, retrieve and manage all its info like tickets, users, and more within osTicket.
 </p>
 <br />
 12. Next search IIS on the windows start menu, right click and open as admin.
@@ -95,16 +97,16 @@ xxxInstalling my sql gives os ticket a database to store, retrieve and manage al
 <br />
 <img src="https://imgur.com/s5jUSDP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 13. Open the PHP manager that was installed earlier. Click register and it will ask for a location, click the three dots. Locate file C:\PHP\CGI and select it.
-xxx regestering PHP like this connects IIS to the PHP engine, and it'll know where to process those PHP files.
+Regestering PHP like this connects IIS to the PHP engine, and it'll know where to process those PHP files.
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
- Download OSTicket (osTicket v 1.15.8) https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link onto the machine. 
+ Download OSTicket (osTicket v 1.15.8) [https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link ]onto the machine. 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
-xxx the "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot ANy files sent here will be served when the server is accessed throggh a browser.
+The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot ANy files sent here will be served when the server is accessed throgh a browser.
 </p>
 <br />
 15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket" for organizational purposes.
@@ -115,7 +117,7 @@ xxx the "upload" file is the actual web app osTicket, "wwwroot" is IIS's default
 <img src="https://imgur.com/fMTpCKA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 16.Launch osTicket in IIS and Confirm It's Running  First, reload IIS to make sure it recognizes all the new configurations and files.
 Then navigate in the left panel:
-TicketYourName > Sites > Default Web Site > osTicket
+YourName > Sites > Default Web Site > osTicket
 On the right panel, click *“Browse :80” — this tells IIS to open the site over port 80 (HTTP).
 If everything’s set up right, your browser will launch and you’ll see the osTicket welcome screen that says:
 “Thanks for choosing osTicket!”
@@ -146,19 +148,22 @@ osTicket needs permission to write to ost-config.php during setup so that it can
 Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
-20. Instal HeidiSQL so that you can connect to MySQL. https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
-xxx HeidiSQL is a GUI for MySQL You’ll need it to create, view, and manage the osTicket database in a user friendly way.
-Open the file and install it. The app shoud open after install. On the bottom left click new, then enter username:Root then password:
-Create a new session, enter username and passowrd.
+20. Instal HeidiSQL so that you can connect to MySQL. 
+https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
+HeidiSQL is a GUI for MySQL You’ll need it to create, view, and manage the osTicket database in a user friendly way.
+Open the file and install it. The app shoud open after install. 
 </p>
 <br />
-21. Create a new session and connect to it by clicking open.  
+21. On the left enter username:Root then password: and click open
+Create a new session, enter username and passowrd. 
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/Tcf1nhi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-22. In Heidi right click unnamed in upper left corner, then click create new then database.then name it osTIcket then say ok
+21. In Heidi  click new, then right click unnamed in upper left corner, then name it osTIcket.  On the left enter username:Root then password: and click open
+
+new then database. then say ok
 xxx  This is where all osTicket data will be stored like user data, support tickets, system settings, etc. 
 </p>
 <br />
