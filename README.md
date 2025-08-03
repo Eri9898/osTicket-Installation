@@ -132,7 +132,7 @@ Then Refresh osTicket Browser
 Enabling these is CRUCIAL because osTicket needs them to function smoothly, especially if you're handling email-based tickets 
 </p>
 <br />
-18. Rename ost-sampleconfig.php to ost-config.php
+18. Rename ost_sampleconfig.php to ost_config.php
 It is located in
 C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 This file is the default configuration template that osTicket needs to finalize setup. Renaming it tells the system,
@@ -148,7 +148,7 @@ osTicket needs permission to write to ost-config.php during setup so that it can
 Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
-20. Instal HeidiSQL so that you can connect to MySQL. 
+20. Install HeidiSQL so that you can connect to MySQL. 
 https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit
 HeidiSQL is a GUI for MySQL You’ll need it to create, view, and manage the osTicket database in a user friendly way.
 Open the file and install it. The app shoud open after install. 
