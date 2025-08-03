@@ -3,18 +3,29 @@
 </p>
 
 <h1>osTicket - Installation</h1>
-This tutorial outlines the installation of the open-source help desk ticketing system osTicket.<br />
+This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft Azure and fully configure it as a web server hosting the osTicket ticketing system. This includes environment hardening, dependency management, web server configuration, PHP integration, MySQL database setup, and system testing.
+<br />
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines)
-- Remote Desktop
-- Internet Information Services (IIS)
+- Microsoft Azure – IaaS Virtual Machine Deployment
+- Windows 10 Pro (21H2) – Web Server Host
+- IIS (Internet Information Services) – Web Hosting Platform
+- PHP 7.3.8 – Backend Scripting Language for osTicket
+- MySQL 5.5 – Database Engine
+- HeidiSQL – GUI Client for Database Management
+- Remote Desktop Protocol (RDP) – Secure Admin Access
 
-<h2>Operating Systems Used </h2>
+<h2>Skills Used</h2>
 
-- Windows 10</b> (21H2)
+- Deploying secure infrastructure in Azure
+- Configuring IIS as a public-facing web server
+- Installing and linking PHP, CGI, and required modules
+- Creating a MySQL database and integrating it with osTicket
+- Securing configuration files and web root access
+
+Diagnosing and troubleshooting web service behavior
 
 
 <h2>Installation Steps</h2>
