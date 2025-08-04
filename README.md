@@ -24,8 +24,7 @@ This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft
 - Installing and linking PHP, CGI, and required modules
 - Creating a MySQL database and integrating it with osTicket
 - Securing configuration files and web root access
-
-Diagnosing and troubleshooting web service behavior
+- Diagnosing and troubleshooting web service behavior
 
 
 <h2>Installation Steps</h2>
