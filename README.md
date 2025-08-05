@@ -44,10 +44,9 @@ This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/261ff49c-4e4f-494c-8d2b-b1eefb5ea4b4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-2. Connect to the VM via Remote Desktop and within the VM enable IIS. This step turns the VM into a web server essentially Go to the control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box. Then apply changes.
-</p>
+2. Connect to the VM via Remote Desktop and within the VM enable IIS. This step turns the VM into a web server essentially Go to the control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box.
 <br />
-3. Next you must enable CGI and common HTTP Features. On the same IIS drop menu, scroll to world wide services>App Development> CGI and check the box. Scroll further down the list, check and expand HTTP Features.  Make sure all the boxes within HTTP features are turned on. IIS needs CGI and HTTP features in order to host dynamic and static content  
+3. Next you must enable CGI and common HTTP Features. Expand the IIS drop menu, scroll to world wide services>App Development> CGI and check the box. Scroll further down the list, check and expand HTTP Features.  Make sure all the boxes within HTTP features are turned on. IIS needs CGI and HTTP features in order to host dynamic and static content.
 </p>
 <br />
 4. Make sure IIS Managment Console is checked. Access it by scrolling back up to IIS on the same windows features window,  clicking on IIS>Web Management Tools>IIS Mangment Console
@@ -115,9 +114,8 @@ Regestering PHP like this connects IIS to the PHP engine, and it'll know where t
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
  Download OSTicket (osTicket v 1.15.8) [https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link ]onto the machine. 
-Right click file> extract and send to 
 Open the OSTicket file, extract and copy the zipped file "Upload" within it. Copy it into c:\inetpub\wwwroot
-The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot ANy files sent here will be served when the server is accessed throgh a browser.
+The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot. Any files sent here will be served when the server is accessed throgh a browser.
 </p>
 <br />
 15. Within c:\inetpub\wwwroot rename the upload file to "OSTicket" for organizational purposes.
