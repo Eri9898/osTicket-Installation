@@ -141,7 +141,7 @@ Then Refresh osTicket Browser
 Enabling these is CRUCIAL because osTicket needs them to function smoothly, especially if you're handling email-based tickets 
 </p>
 <br />
-18. Rename ost_sampleconfig.php to ost_config.php
+18. Rename ost-sampleconfig.php to ost-config.php
 It is located in
 C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 This file is the default configuration template that osTicket needs to finalize setup. Renaming it tells the system,
