@@ -73,7 +73,6 @@ https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share
 Rewrite modules help organize and secure web traffic and more. 
 </p>
 <br />
-
 8. Next install PHP (php-7.3.8-nts-Win32-VC15-x86.zip)
 https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link
 osTicket is a PHP based app, so installing PHP helps IIS to properly process the code within osTicket's files. Without this IIS can't understand or run osTicket basically.
