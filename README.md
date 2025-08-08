@@ -32,7 +32,7 @@ This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft
 <p>
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/ab671f05-1dfe-4c06-a4a0-c781f6bcabee.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
+1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows 10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
 
 </p>
 <p>
@@ -44,7 +44,8 @@ This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/261ff49c-4e4f-494c-8d2b-b1eefb5ea4b4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-2. Connect to the VM via Remote Desktop and within the VM enable IIS. This step turns the VM into a web server essentially Go to the control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box.
+2. Connect to the VM via Remote Desktop and within the VM enable IIS. This step turns the VM into a web server essentially. Go to the control Panel>programs>Programs & Features> Windows Features On/Off, then scroll down and check the IIS box.
+<p>
 <br />
 3. Next you must enable CGI and common HTTP Features. Expand the IIS drop menu, scroll to world wide services>App Development> CGI and check the box. Scroll further down the list, check and expand HTTP Features.  Make sure all the boxes within HTTP features are turned on. IIS needs CGI and HTTP features in order to host dynamic and static content.
 </p>
@@ -94,9 +95,9 @@ Since PHP was built using C++, it expects these resources to be there. Without t
 <br />
 11.  Next Install a database ((mysql-5.5.62-win32.msi) 
 https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link
-Select the typical install, click finish to launch the configuariation wizard. Within that check standard configuaration and install as a windows service.
+Select the typical install, click finish to launch the configuration wizard. Within that check standard configuaration and install as a windows service.
 Create your credentials for the database, your username will automatically be “root”. So create your password.  Do not forget it! Then execute.
-Installing mySQL gives os ticket a database to store, retrieve and manage all its info like tickets, users, and more within osTicket.
+Installing mySQL gives osTicket a database to store, retrieve and manage all it's info like tickets, users, and more within osTicket.
 </p>
 <br />
 12. Next search IIS on the windows start menu, right click and open as admin.
@@ -113,8 +114,8 @@ Regestering PHP like this connects IIS to the PHP engine, and it'll know where t
 <br />
 <img src="https://imgur.com/5AHq3tk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 14. Refresh IIS AFTER selecting the file.
- Download OSTicket (osTicket v 1.15.8) [https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link ]onto the machine. 
-Extract and copy the zipped file OSTicket. Copy it into c:\inetpub\wwwroot
+Download OSTicket (osTicket v 1.15.8) [https://drive.google.com/file/d/13IsQ-fzu5Nms5LSkfaiIpwvEoa-Jc75z/view?usp=drive_link ] onto the machine. 
+Extract and copy the zipped file osTicket. Copy it into c:\inetpub\wwwroot
 The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default webroot. Any files sent here will be served when the server is accessed throgh a browser.
 </p>
 <br />
@@ -124,7 +125,7 @@ The "upload" file is the actual web app osTicket, "wwwroot" is IIS's default web
 </p>
 <br />
 <img src="https://imgur.com/fMTpCKA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-16.Launch osTicket in IIS and Confirm It's Running  First, reload IIS to make sure it recognizes all the new configurations and files.
+16.Launch osTicket in IIS and confirm it's running.  First, reload IIS to make sure it recognizes all the new configurations and files.
 Then navigate in the left panel:
 YourName > Sites > Default Web Site > osTicket
 On the right panel, click *“Browse :80” — this tells IIS to open the site over port 80 (HTTP).
@@ -133,12 +134,12 @@ If everything’s set up right, your browser will launch and you’ll see the os
 This confirms IIS is successfully hosting your osTicket app and that port 80 is properly handling HTTP traffic. You’re basically telling your VM to host this site.
 </p>
 <br />
-17. On that same page, Ticket\YourName> Sites> Default> osTicket.  Double-click PHP Manager within OSticket. Click “Enable or disable an extension” Enable:
+17. On that same page, Ticket\YourName> Sites> Default> osTicket.  Double-click PHP Manager within osTicket. Click “Enable or Disable an extension” Enable:
 php_imap.dll – allows email fetching for tickets
 php_intl.dll – supports international characters & formatting
 php_opcache.dll – improves PHP performance by caching scripts
 Then Refresh osTicket Browser
-Enabling these is CRUCIAL because osTicket needs them to function smoothly, especially if you're handling email-based tickets 
+Enabling these are CRUCIAL because osTicket needs them to function smoothly, especially if you're handling email-based tickets.
 </p>
 <br />
 18. Rename ost-sampleconfig.php to ost-config.php
@@ -153,7 +154,7 @@ Without this rename, osTicket will not finish installing.
 <br />
 <img src="https://imgur.com/t2GHOsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 19. Next you will assign permissions to ost-config.php. 
-osTicket needs permission to write to ost-config.php during setup so that it can access the necessary tools to contnue. so you will change the permissions to allow osTicket to utilize the config file.
+osTicket needs permission to write to ost-config.php during setup so that it can access the necessary tools to contnue. So you will change the permissions to allow osTicket to utilize the config file.
 Right click to properties and go to security. Click advanced then disable inheritance, click remove all permissions. Next click add, click select principle and type everyone and click ok. Check box “full control” and apply.
 </p>
 <br />
