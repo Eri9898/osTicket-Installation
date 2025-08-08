@@ -32,7 +32,7 @@ This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft
 <p>
 <img src="https://github.com/Eri9898/osticket-prereqs/assets/143845247/ab671f05-1dfe-4c06-a4a0-c781f6bcabee.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet. (Since this machine will be hosting a server web application extra secuirty precautiomns will be in place.)
+1. To begin you must first create a resource group within Microsoft Azure.  Then create a Windows10 Machine with 2-4 CPUs, make sure it is within the resource group you created. Allow the machine to create a virtual network and subnet.
 
 </p>
 <p>
