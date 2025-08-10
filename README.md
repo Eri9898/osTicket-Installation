@@ -51,7 +51,7 @@ This tutorial demonstrates how to provision a Windows 10 Virtual Machine in Micr
 </p>
 <br />
 4. Make sure IIS Managment Console is checked. Access it by scrolling back up to IIS on the same windows features window,  clicking on IIS>Web Management Tools>IIS Mangment Console
-This is the Graphic User Interface for osTicket, which allows for efficient management of web applications without relying soley on code-based tools like powershell or python. IIS manager also includes built-in diagnostic features that are valauble for real world trouble shooting.
+This is the Graphic User Interface for osTicket, which allows for efficient management of web applications without relying soley on code-based tools like powershell or python. IIS manager also includes built-in diagnostic features that are valauble for real world troubleshooting.
 </p>
 <br />
 </p>
