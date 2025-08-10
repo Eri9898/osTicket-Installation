@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Installation</h1>
-This lab demonstrates how to provision a Windows 10 Virtual Machine in Microsoft Azure and fully configure it as a web server hosting the osTicket ticketing system. This includes environment hardening, dependency management, web server configuration, PHP integration, MySQL database setup, and system testing.
+This tutorial demonstrates how to provision a Windows 10 Virtual Machine in Microsoft Azure and fully configure it as a web server hosting the osTicket ticketing system. This includes environment hardening, dependency management, web server configuration, PHP integration, MySQL database setup, and system testing.
 <br />
 
 
