@@ -17,7 +17,7 @@ This tutorial demonstrates how to provision a Windows 10 Virtual Machine in Micr
 - HeidiSQL – GUI Client for Database Management
 - Remote Desktop Protocol (RDP) – Secure Admin Access
 
-<h2>Skills Used</h2>
+<h2>Tutorial Outline</h2>
 
 - Deploying secure infrastructure in Azure
 - Configuring IIS as a public-facing web server
